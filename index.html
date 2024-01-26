@@ -5,19 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <h1>Odin Weather App</h1>
     <form class="form">
         <label for="location">Location:</label>
-        <input type="text" name="location" id="location">
+        <input type="text" name="location" id="location" required>
         <button type="submit" class="submit">Get Temperature</button>
+    </form>
+    <div class="output">
+        <div class="location-info">
+            <p class="name"></p>
+            <p class="region"></p>
+            <p class="country"></p>
+        </div>
         <h2 class="temp"></h2>
         <div class="weather-data">
-            <img src="" alt="" class="weather-icon" width="100px">
+            <img src="" alt="" class="weather-icon" width="150px">
             <h3 class="weather-desc"></h3>
         </div>
         <p class="date"></p>
-
-    </form>
+    </div>
 </body>
 </html>
